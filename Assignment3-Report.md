@@ -2,15 +2,12 @@
 
 **Lab. Report #3 – Code Coverage, Adequacy Criteria and Test Case Correlation**
 
-| Group \#:      |     |
-| -------------- | --- |
-| Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
-
-(Note that some labs require individual reports while others require one report
-for each group. Please see each lab document for details.)
+| Group 26         |          |              |
+| ---------------- | -------- | ------------ |
+| Liana Goodman    | 30089196 | LianaBG      |
+| Amir Abdrakmanov |          | aabdrakmanov |
+| Jared Lundy      |          |              |
+| Jordan Lundy     |          |              |
 
 # 1 Introduction
 
@@ -28,9 +25,11 @@ Text…
 
 Text…
 
-# 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
-
-Text…
+# 5 A detailed report of the coverage achieved of each class and method 
+## Blackbox Coverage
+The screenshots below are captures of coverage from black box testing and as a result does not show all of the methods in a class.
+## Whitebox Coverage
+The screenshots below show the coverage form white box testing and show the full class coverage.
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
