@@ -5,7 +5,7 @@
 | Group 26         |          |              |
 | ---------------- | -------- | ------------ |
 | Liana Goodman    | 30089196 | LianaBG      |
-| Amir Abdrakmanov |          | aabdrakmanov |
+| Amir Abdrakmanov | 30085827 | aabdrakmanov |
 | Jared Lundy      |          |              |
 | Jordan Lundy     |          |              |
 
