@@ -7,7 +7,7 @@
 | Liana Goodman    | 30089196 | LianaBG      |
 | Amir Abdrakmanov | 30085827 | aabdrakmanov |
 | Jared Lundy      |          |              |
-| Jordan Lundy     |          |              |
+| Jordan Lundy     |30086686  | jordan427-prog |
 
 ### Table of Contents
 1. [Introduction](#1-introduction)
@@ -24,6 +24,7 @@
 This lab explores whitebox testing as well as coverage calculations and tools. Using the same base we used for blackbox testing, we will be able to explore the differences while also practicing JUnit4 and coverage calculations. Throughout the lab, we will also be exploring and comparing some differences between the coverage methods, meeting minimum coverage requirements, and data flow.
 
 # 2 - Manual Data-Flow Coverage Calculations for `calculateColumnTotal` and `constrain` Methods
+## calculateColumnTotal
 
 # 3 - Testing Strategy for New Unit Tests
 ## DataUtilities
