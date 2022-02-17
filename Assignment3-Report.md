@@ -25,7 +25,7 @@ This lab explores whitebox testing as well as coverage calculations and tools. U
 
 # 2 - Manual Data-Flow Coverage Calculations for `calculateColumnTotal` and `constrain` Methods
 ## calculateColumnTotal
-
+![](media/code2flow_EYkoVr.png)
 # 3 - Testing Strategy for New Unit Tests
 ## DataUtilities
 ### clone
