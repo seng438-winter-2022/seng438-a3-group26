@@ -6,7 +6,7 @@
 | ---------------- | -------- | ------------ |
 | Liana Goodman    | 30089196 | LianaBG      |
 | Amir Abdrakmanov | 30085827 | aabdrakmanov |
-| Jared Lundy      |          |              |
+| Jared Lundy      | 30086687 | jared840     |
 | Jordan Lundy     |30086686  | jordan427-prog |
 
 ### Table of Contents
@@ -25,7 +25,20 @@ This lab explores whitebox testing as well as coverage calculations and tools. U
 
 # 2 - Manual Data-Flow Coverage Calculations for `calculateColumnTotal` and `constrain` Methods
 ## calculateColumnTotal
+### Data Flow Graph
 ![](media/code2flow_EYkoVr.png)
+
+### Def-Use Table
+note: line 123 = 1
+| _Variable_ | _Def_ | _Use_ |
+| --- | --- | --- |
+| data | 1 | 2, 4, 6 |
+| column | 1 | 6 |
+| total | 3, 8 | 8, 11 |
+| rowCount | 4 | 5 |
+| r | 5 | 5 ,6 , 9 |
+| n | 6 | 7, 8 |
+
 # 3 - Testing Strategy for New Unit Tests
 ## DataUtilities
 ### clone
