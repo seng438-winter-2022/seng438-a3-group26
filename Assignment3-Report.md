@@ -126,6 +126,11 @@ Based on the documentation and visible code, these test cases were appropriate t
 ### expand
 > Creates a new range by adding margins to an existing range.
 
+From the source code and from the documentations, we have built the following test cases:
+- no change to lower margin
+- no change to upper margin
+- negative margins
+- null range (not permitted)
 
 # 4 - Selected Test Cases Using Coverage Information and How They Have Increased Code Coverage
 
