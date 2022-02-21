@@ -93,6 +93,14 @@ The dupair coverage for the `constrain` method is 100%, as all pairs appear in t
 ## DataUtilities
 
 ### clone
+> Returns a clone of the specified array.
+
+`clone` specifies that the argument is not permitted to be null and states that the returned value should be a clone of the passed object. Looking at the method code shows that the function copies the contents from one to the other without anything too complicated happenning.
+
+To test this method, we will explore 
+- null parameters
+- even 2D array with a variety of double entries
+- a jagged 2D array with a variety of double entries
 
 ## Range
 
