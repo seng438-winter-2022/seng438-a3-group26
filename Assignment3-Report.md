@@ -129,7 +129,11 @@ Based on the documentation and visible code, these test cases were appropriate t
 From the source code and from the documentations, we have built the following test cases:
 - no change to lower margin
 - no change to upper margin
+- no change to either margin
 - negative margins
+- margins larger than 1
+- margins less than 1
+- margins that make lower bound larger than upper
 - null range (not permitted)
 
 # 4 - Selected Test Cases Using Coverage Information and How They Have Increased Code Coverage
