@@ -39,6 +39,49 @@ note: line 123 = 1
 | r | 5 | 5 ,6 , 9 |
 | n | 6 | 7, 8 |
 
+
+
+
+
+## constrain
+## Data Flow Graph
+
+# Def-Use Table
+
+| _Variable_ | _Def_ | _Use_ |
+|------------|-------|-------|
+|   value    |   0   |1,2,3,5|
+|   result   | 1,4,6 |   7   |
+
+# Def Use set per Variable
+
+| _Variable_ | _Def Set_ | _C-Use Set_ | _P-Use Set_ |
+|------------|-----------|-------------|-------------|
+|   value    |    {0}    |      {1}    |    {2,3,5}  |
+|   result   |  {1,4,6}  |      {7}    |      {}     |
+
+# DU pairs per Variable 
+ 
+| _Variable_ |      _C-Use Pairs_ | _P-Use Pairs_                  |
+|------------|------------------------|--------------------------------|
+|   value    |         {(0,1)}        |     {(0,2), (0,3), (0,5)}    |
+|   result   |  {(1,7), (4,7), (6,7)} |      {}          |
+
+# Test case pair coverage
+
+| _Test Case_ | _value Pairs_ | _result Pairs_ |
+| ---         |----           |-----           |
+|TC1          | (0,1), (0,2)  | (1,7)          |
+|TC2          | (0,1), (0,2)  | (1,7)          |
+|TC3          | (0,1), (0,2), (0,3)  | (1,7), (4,7)          |
+|TC4          | (0,1), (0,2), (0,3), (0,5)  | (1,7), (6,7)          |
+|TC5          | (0,1), (0,2)  | (1,7)          |
+|TC6          | (0,1), (0,2)  | (1,7)          |
+
+# DU Pair Coverage
+The dupair coverage for the `constrain` method is 100%, as all pairs appear in the test cases.
+
+
 # 3 - Testing Strategy for New Unit Tests
 ## DataUtilities
 ### clone
