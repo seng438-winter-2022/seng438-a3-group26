@@ -115,6 +115,13 @@ Based on the provided method description and available code, the following test 
 - non-equivalent null object
 
 ### combineIgnoringNaN
+> Returns a new range that spans both range1 and range2. This method has a special handling to ignore Double.NaN values.
+
+Based on the documentation and visible code, these test cases were appropriate to build:
+- null ranges with null return
+- 2 cases with each range being null
+- Range with Double.NaN value expecting null
+- Range without Double.NaN value (covered by the 2 cases testing individueal null)
 
 ### expand
 
