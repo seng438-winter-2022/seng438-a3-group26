@@ -105,6 +105,14 @@ To test this method, we will explore
 ## Range
 
 ### equals
+> Tests this object for equality with an arbitrary object.
+
+Based on the provided method description and available code, the following test cases will cover all.
+- equivalent null object
+- equivalent Range object
+- non-equivalent non-Range object
+- non-equivalent Range object
+- non-equivalent null object
 
 ### combineIgnoringNaN
 
