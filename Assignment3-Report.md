@@ -102,6 +102,18 @@ To test this method, we will explore
 - even 2D array with a variety of double entries
 - a jagged 2D array with a variety of double entries
 
+### equal
+>returns true if two 2D arrays are exactly equal, false otherwise
+
+The following test cases were developed based on the documentation of the `equal` method and its source code.
+
+- two fully equal arrays passed
+- two arrays the same length but unequal members
+- first array is null, second is fine
+- second array is null, first is fine
+- both arrays are null
+- arrays are of unequal lengths
+
 ## Range
 
 ### equals
@@ -129,12 +141,46 @@ Based on the documentation and visible code, these test cases were appropriate t
 From the source code and from the documentations, we have built the following test cases:
 - no change to lower margin
 - no change to upper margin
-- no change to either margin
 - negative margins
-- margins larger than 1
-- margins less than 1
-- margins that make lower bound larger than upper
 - null range (not permitted)
+
+### expandToInclude
+> Creates a new Range object that includes the passed value
+
+Test cases were created based on the documentation of `expandToInclude` and its source code
+
+- value is inside range
+- value is outside lower bound
+- value is outside upper bound
+- base range is null
+- value is NaN
+- value is positive infinity
+- value is negative infinity
+
+### scale
+> Creates a new Range object scaled by a positive factor
+
+Test cases were created based on the documentation of `scale` and its source code
+
+- scale by a positive factor
+- scale by a negative factor
+- base Range is null
+- scale by NaN
+- scale by negative infinity
+- scale by positive infinity
+
+### shift(Range, double)
+> Creates a new Range object shifted by a delta without crossing 0
+
+Test cases were created based on the documentation of `shift(Range, double)` and its source code
+
+- shift by a small positive value
+- shift by a large positive value
+- shift by a small negative value
+- shift by a large negative value
+- base Range is null
+- shift by negative infinity
+- shift by positive infinity 
 
 # 4 - Selected Test Cases Using Coverage Information and How They Have Increased Code Coverage
 
