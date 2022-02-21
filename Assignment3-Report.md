@@ -124,6 +124,8 @@ Based on the documentation and visible code, these test cases were appropriate t
 - Range without Double.NaN value (covered by the 2 cases testing individueal null)
 
 ### expand
+> Creates a new range by adding margins to an existing range.
+
 
 # 4 - Selected Test Cases Using Coverage Information and How They Have Increased Code Coverage
 
