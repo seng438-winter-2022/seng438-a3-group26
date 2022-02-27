@@ -158,10 +158,9 @@ The following test cases were developed based on the documentation of the `equal
 > Tests this object for equality with an arbitrary object.
 
 Based on the provided method description and available code, the following test cases will cover all.
-- equivalent null object
 - equivalent Range object
 - non-equivalent non-Range object
-- non-equivalent Range object
+- non-equivalent Range object (both one for lower and one for upper bounds)
 - non-equivalent null object
 
 ### combineIgnoringNaN

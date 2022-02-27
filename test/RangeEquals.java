@@ -19,13 +19,6 @@ public class RangeEquals {
     }
 
     @Test
-    public void testEquNull () {
-        Range comp = null;
-        boolean result = range.equals(null);
-        assertTrue (result);
-    }
-
-    @Test
     public void testNonEquNull () {
         boolean result = range.equals (null);
         assertFalse (result);
@@ -39,8 +32,15 @@ public class RangeEquals {
     }
 
     @Test
-    public void testNonEquRange () {
-        Range param = new Range (1, 2);
+    public void testNonEquLowerRange () {
+        Range param = new Range (1, 10);
+        boolean result = range.equals (param);
+        assertFalse (result);
+    }
+
+    @Test
+    public void testNonEquUpperRange () {
+        Range param = new Range (2, 7);
         boolean result = range.equals (param);
         assertFalse (result);
     }
