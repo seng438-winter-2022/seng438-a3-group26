@@ -252,6 +252,11 @@ The screenshots below show the coverage form white box testing and show the full
 
 # 6 - Pros and Cons of Coverage Tools Used and Metrics Reported
 
+The coverage tool ultimately chosen by our team was EclEmma. Due to its ease of access within the eclipse environment and the 
+instructions of this lab catered to this coverage tool, it was chosen as our group's tool. However, one drawback of this coverage 
+tool is that condition coverage is not tracked by this tool, and thus our group replaced condition coverage with method coverage,
+which is tracked by this coverage tool.
+
 # 7 - Comparing Advantages and Disadvantages of Requirements-Based Test Generation and Coverage-Based Test Generation
 
 # 8 - Teamwork Allocation
