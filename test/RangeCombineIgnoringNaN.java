@@ -10,29 +10,29 @@ public class RangeCombineIgnoringNaN {
     @Test
     public void testBothNull () {
         Range result = Range.combineIgnoringNaN (null, null);
-        assertEquals (result, null);
+        assertEquals (null, result);
     }
 
     @Test
     public void test1stNull () {
         Range param = new Range (1, 14);
         Range result = Range.combineIgnoringNaN (param, null);
-        assertEquals (result, param);
+        assertEquals (param, result);
     }
 
     @Test
     public void test2ndNull () {
         Range param = new Range (1, 14);
         Range result = Range.combineIgnoringNaN (null, param);
-        assertEquals (result, param);
+        assertEquals (param, result);
     }
 
     @Test
     public void testNaNParam () {
-        Range param1 = new Range (1, 14);
+        Range param1 = new Range (1, Double.Nan);
         Range param2 = new Range (Double.NaN, 3);
         Range result = Range.combineIgnoringNaN (param1, param2);
-        assertEquals (result, null);
+        assertEquals (null, result);
     }
 
     @Test
@@ -41,14 +41,22 @@ public class RangeCombineIgnoringNaN {
         Range param2 = new Range (1, 5);
         Range comp = new Range (1, 8);
         Range result = Range.combineIgnoringNaN(param1, param2);
-        assertEquals (result, comp);
+        assertEquals (comp, result);
     }
 
     @Test
-    public void testNaNRange () {
+    public void testNaNRange1 () {
         Range param1 = new Range (Double.NaN, Double.NaN);
         Range param2 = null;
         Range result = Range.combineIgnoringNaN(param1, param2);
-        assertEquals (resul, null);
+        assertEquals (null, result);
+    }
+
+    @Test
+    public void testNaNRange2 () {
+        Range param2 = new Range (Double.NaN, Double.NaN);
+        Range param1 = null;
+        Range result = Range.combineIgnoringNaN(param1, param2);
+        assertEquals (null, result);
     }
 }

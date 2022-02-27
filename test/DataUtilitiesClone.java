@@ -22,7 +22,7 @@ public class DataUtilitiesClone {
                               {-3, -7.6},
                               {13, 12} };
         double [][] result = DataUtilities.clone(param);
-        assertArrayEquals(result, param); 
+        assertArrayEquals(param, result); 
     }
 
     @Test
@@ -31,6 +31,6 @@ public class DataUtilitiesClone {
                               {-3, -7.6, -2, -17.9, 2.09},
                               {13} };
         double [][] result = DataUtilities.clone(param);
-        assertArrayEquals(result, param);
+        assertArrayEquals(param, result);
     }
 }

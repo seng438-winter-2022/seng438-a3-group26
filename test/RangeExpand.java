@@ -21,20 +21,20 @@ public class RangeExpand {
     public void testLowerMargin () {
         Range result = Range.expand (range, 1.2, 0);
         Range comp = new Range (1.8, 4);
-        assertEquals(result, comp);
+        assertEquals (comp, result);
     }
 
     @Test
     public void testUpperMargin () {
         Range result = Range.expand (range, 0, 0.8);
         Range comp = new Range (3, 4.8);
-        assertEquals(result, comp);
+        assertEquals(comp, result);
     }
 
     @Test
     public void testBothZero () {
         Range result = Range.expand (range, 0, 0);
-        assertEquals (result, range);
+        assertEquals (range, result);
     }
 
     @Test
@@ -53,20 +53,20 @@ public class RangeExpand {
     public void testNegativeLower () {
         Range result = Range.expand (range, - 0.1, 0);
         Range comp = new Range (3.1, 4);
-        assertEquals (result, comp);
+        assertEquals (comp, result);
     }
 
     @Test
     public void testNegativeUppper () {
         Range result = Range.expand (range, 0, -0.1);
         Range comp = new Range (3, 3.9);
-        assertEquals (result, comp);
+        assertEquals (comp, result);
     }
 
     @Test
     public void testOverlap () {
         Range result = Range.expand (range, -3, 0);
-        Range comp = new Range (4, 6);
-        assertEquals (result, comp);
+        Range comp = new Range (5, 5);
+        assertEquals (comp, result);
     }
 }
