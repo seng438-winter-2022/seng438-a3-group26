@@ -79,6 +79,9 @@ note: line 123 = 1
 | testEmpty | (1,2), (1,4), (1,6) | (1,6) | | (4,5) | (5,6) | |
 | nullColTest | (1,2) | | | | | | |
 
+Every DU Pair shows up at least once in the test cases for CalculateColumnTotal. Specifically, the testValidParameters test case
+hit every DU pair, while the others hit various numbers of pairs. In total, however, every pair was tested at least once, 
+indicating a 100% DU paiur coverage for calculateColumnTotal.
 
 ## constrain
 
