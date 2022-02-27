@@ -57,6 +57,17 @@ note: line 123 = 1
 | r | {5} | {6,9} | {5} | 
 | n | {6} | {8} | {7} | 
 
+### DU-Pairs per Variable
+
+| _variable_ | _C-Use pairs_ | _P-use pairs_ |
+| --- | --- | --- | 
+| data | {(1,2),(1,4),(1,6)} | {} |
+| column | {(1,6)} | {} |
+| total | {(3,8),(3,11),(8,8),(8,11)} | {} |
+| rowCount | {} | {(4,5)} |
+| r | {(5,6),(5,9)} | {(5,5)} |
+| n | {(6,8)} | {(6,7)} |
+
 ## constrain
 
 ### Data Flow Graph
