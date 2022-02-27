@@ -170,7 +170,8 @@ Based on the documentation and visible code, these test cases were appropriate t
 - null ranges with null return
 - 2 cases with each range being null
 - Range with Double.NaN value expecting null
-- Range without Double.NaN value (covered by the 2 cases testing individueal null)
+- Range being Double.NaN
+- Range without Double.NaN value (individual cases and combined for a total of 3 cases)
 
 ### expand
 > Creates a new range by adding margins to an existing range.

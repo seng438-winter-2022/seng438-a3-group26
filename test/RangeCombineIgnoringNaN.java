@@ -28,10 +28,27 @@ public class RangeCombineIgnoringNaN {
     }
 
     @Test
-    public void testNaN () {
+    public void testNaNParam () {
         Range param1 = new Range (1, 14);
         Range param2 = new Range (Double.NaN, 3);
         Range result = Range.combineIgnoringNaN (param1, param2);
         assertEquals (result, null);
+    }
+
+    @Test
+    public void testNoIssues () {
+        Range param1 = new Range (3, 8);
+        Range param2 = new Range (1, 5);
+        Range comp = new Range (1, 8);
+        Range result = Range.combineIgnoringNaN(param1, param2);
+        assertEquals (result, comp);
+    }
+
+    @Test
+    public void testNaNRange () {
+        Range param1 = new Range (Double.NaN, Double.NaN);
+        Range param2 = null;
+        Range result = Range.combineIgnoringNaN(param1, param2);
+        assertEquals (resul, null);
     }
 }
