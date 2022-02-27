@@ -68,6 +68,18 @@ note: line 123 = 1
 | r | {(5,6),(5,9)} | {(5,5)} |
 | n | {(6,8)} | {(6,7)} |
 
+### pair coverage
+
+| _test case nanme_ | _data pairs tested_ | _column pairs tested_ | _total pairs tested_ | rowCount pairs tested_ | _r pairs tested_ | _n pairs tested_ |
+| --- | --- | --- | --- | --- | --- | --- | 
+| testValidParameters | (1,2), (1,4), (1,6) | (1,6) | (3,8) (3,11), (8,8), (8,11) | | (5,6), (5,9), (5,5) | (6,8), (6,7) |
+| testBoundary | (1,2), (1,4), (1,6) | (1,6) | (3,8) (3,11), (8,8), (8,11) | | (5,6), (5,9), (5,5) | (6,8), (6,7) |
+| testOutsideBoundary | (1,2), (1,4), (1,6) | (1,6) | | (4,5) | (5,6) | |
+| testNegative | (1,2), (1,4), (1,6) | (1,6) | | (4,5) | (5,6) | |
+| testEmpty | (1,2), (1,4), (1,6) | (1,6) | | (4,5) | (5,6) | |
+| nullColTest | (1,2) | | | | | | |
+
+
 ## constrain
 
 ### Data Flow Graph
