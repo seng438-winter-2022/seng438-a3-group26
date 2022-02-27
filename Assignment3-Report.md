@@ -46,6 +46,17 @@ note: line 123 = 1
 | r | 5 | 5 ,6 , 9 | (5,5),(5,6),(5,9) |
 | n | 6 | 7, 8 | (6,7),(6,8) |
 
+### Def-use sets
+
+| _variable_ | _def set_ | _c-use set_ | _p-use set_ |
+| --- | --- | --- | --- |
+| data | {1} | {2,4,6} | {} | 
+| column | {1} | {6} | {} | 
+| total | {3,8} | {8,11} | {} |
+| rowCount | {4} | {} | {5} | 
+| r | {5} | {6,9} | {5} | 
+| n | {6} | {8} | {7} | 
+
 ## constrain
 
 ### Data Flow Graph
