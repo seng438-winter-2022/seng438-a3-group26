@@ -37,14 +37,14 @@ This lab explores whitebox testing as well as coverage calculations and tools. U
 ### Def-Use Table
 
 note: line 123 = 1
-| _Variable_ | _Def_ | _Use_ |
-| --- | --- | --- |
-| data | 1 | 2, 4, 6 |
-| column | 1 | 6 |
-| total | 3, 8 | 8, 11 |
-| rowCount | 4 | 5 |
-| r | 5 | 5 ,6 , 9 |
-| n | 6 | 7, 8 |
+| _Variable_ | _Def_ | _Use_ | _DU-Pairs_ |
+| --- | --- | --- | --- |
+| data | 1 | 2, 4, 6 | (1,2),(1,4),(1,6) |
+| column | 1 | 6 | (1,6) |
+| total | 3, 8 | 8, 11 | (3,8),(3,11),(8,8),(8,11) |
+| rowCount | 4 | 5 | (4,5) |
+| r | 5 | 5 ,6 , 9 | (5,5),(5,6),(5,9) |
+| n | 6 | 7, 8 | (6,7),(6,8) |
 
 ## constrain
 
