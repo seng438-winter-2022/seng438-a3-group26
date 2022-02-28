@@ -29,9 +29,10 @@ public class RangeCombineIgnoringNaN {
 
     @Test
     public void testNaNParam () {
-        Range param1 = new Range (1, Double.Nan);
+        Range param1 = new Range (1, Double.NaN);
         Range param2 = new Range (Double.NaN, 3);
         Range result = Range.combineIgnoringNaN (param1, param2);
+        Range comp = new Range (1,3);
         assertEquals (null, result);
     }
 

@@ -169,8 +169,9 @@ Based on the provided method description and available code, the following test 
 Based on the documentation and visible code, these test cases were appropriate to build:
 - null ranges with null return
 - 2 cases with each range being null
-- Range with Double.NaN value expecting null
+- Range with Double.NaN value
 - Range being Double.NaN
+- Both ranges being NaN
 - Range without Double.NaN value (individual cases and combined for a total of 3 cases)
 
 ### expand
