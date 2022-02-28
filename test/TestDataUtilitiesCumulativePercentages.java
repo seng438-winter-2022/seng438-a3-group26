@@ -173,4 +173,24 @@ public class TestDataUtilitiesCumulativePercentages {
 		
 		assertTrue(thrown);
 	}
+	
+	@Test
+	//null is returned
+	public void testNullDataReturn () {
+		mockContext.checking(new Expectations() {
+			{
+				allowing(values).getItemCount();
+				will(returnValue(1));
+				
+				allowing(values).getValue(0);
+				will(returnValue(null));
+				
+				allowing(values).getKey(0);
+				will(returnValue(0));
+			}
+			
+		});
+		KeyedValues result= DataUtilities.getCumulativePercentages(values);
+		assertTrue(Double.isNaN((Double) result.getValue(0)));
+	}
 }
