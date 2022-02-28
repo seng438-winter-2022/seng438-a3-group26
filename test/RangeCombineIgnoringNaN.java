@@ -59,4 +59,12 @@ public class RangeCombineIgnoringNaN {
         Range result = Range.combineIgnoringNaN(param1, param2);
         assertEquals (null, result);
     }
+
+    @Test
+    public void testBothNaN () {
+        Range param1 = new Range (Double.NaN, Double.NaN);
+        Range param2 = new Range (Double.NaN, Double.NaN);
+        Range result = Range.combineIgnoringNaN (param1, param2);
+        assertEquals (null, result);
+    }
 }
