@@ -337,7 +337,25 @@ which is tracked by this coverage tool.
 
 # 7 - Comparing Advantages and Disadvantages of Requirements-Based Test Generation and Coverage-Based Test Generation
 ### Advantages and disadvantages of coverage testing
-Coverage testing ensures that a specific amount of code is covered in the testing. This also ensures that the test cases are well distributed and not centered around only a few parts of the code. This type of testing is good to use as an indication to when there is enough or not enough test cases. Many forms of testing can not do so, but coverage testing is a perfect indication os fuch. However, this type of testing isn't designed to find all bugs, but rather just ensure code is covered. This means that many bugs can be missed. Also, this type of testing can't ensure the quality of the test cases, only the overall coverage. Also, logical operators aren't understood by this type of testing, and so coverage testing will not be able to deal with them properly. Also, coverage testing takes a lot of time to do properly and to meet the coverage percentage. Many test cases might have to be added to ensure coverage is adequate. This would be very time consuming. 
+
+The main advantage of requirements-based test generation is that it provides a decent method to ensure that a system 
+meets the needed requirements. Thus, requirements based test generation is useful to help confirm that a product is 
+doing something useful, and performing correctly. Additionally, requirements-based gives a general idea of whether or not
+a system is performing how its supposed to, by comparing expected versus actual outputs. 
+However, requirements-based testing is only as good as its requirements, and thus is dependent on requirements being well defined.
+Poorly defined requirements can make generating these test cases difficult. Also, requirements based testing may sometimes miss 
+important
+parts of the software, especially if the requirement is very complex. 
+
+Coverage testing ensures that a specific amount of code is covered in the testing. This also ensures that the test cases are well 
+distributed and not centered around only a few parts of the code. This type of testing is good to use as an indication to when 
+there is enough or not enough test cases. Many forms of testing can not do so, but coverage testing is a perfect indication os 
+fuch. However, this type of testing isn't designed to find all bugs, but rather just ensure code is covered. This means that many 
+bugs can be missed. Also, this type of testing can't ensure the quality of the test cases, only the overall coverage. Also, 
+logical operators aren't understood by this type of testing, and so coverage testing will not be able to deal with them properly. 
+Also, coverage testing takes a lot of time to do properly and to meet the coverage percentage. Many test cases might have to be 
+added to ensure coverage is adequate. This would be very time consuming. 
+
 
 
 # 8 - Teamwork Allocation
