@@ -278,7 +278,9 @@ NOTE: Got rid of 5 redundant base = null test cases (all throw exceptions)
 
 ## 4.1 -
 
-## 4.2 -
+## 4.2 - Range `equals` testNonEquLowerRange
+This test case looked at Range class equals method and looked to test the branch where the lower range calue is not equal. This increases the coverage by forcing a specific path and increasing the line coverage. It also hinges on a decision and overall just covers a good blackbox case. Since it covers so many different cases, it helps with everything. Figure 5 shows the branch coverage for Range and anyone with 0 coverage was ignored. Now Figure 1 shows that it the coverage has increased to 100%
+
 
 ## 4.3 -
 
@@ -294,27 +296,27 @@ The screenshots below are captures of coverage from black box testing and as a r
 
 ![](media/DataUtilsLine.png)
 
-_Figue 1 - DataUtilities line coverage for blackbox testing_
+_Figue 2 - DataUtilities line coverage for blackbox testing_
 
 ![](media/RangeLine.png)
 
-_Figure 2 - Range line coverage for blackbox testing_
+_Figure 3 - Range line coverage for blackbox testing_
 
 ![](media/DataUtilsBranch.png)
 
-_Figue 3 - DataUtilities branch coverage for blackbox testing_
+_Figue 4 - DataUtilities branch coverage for blackbox testing_
 
 ![](media/RangeBranch.png)
 
-_Figure 4 - Range branch coverage for blackbox testing_
+_Figure 5 - Range branch coverage for blackbox testing_
 
 ![](media/DataUtilsMethod.png)
 
-_Figue 5 - DataUtilities method coverage for blackbox testing_
+_Figue 6 - DataUtilities method coverage for blackbox testing_
 
 ![](media/RangeMethod.png)
 
-_Figure 6 - Range method coverage for blackbox testing_
+_Figure 7 - Range method coverage for blackbox testing_
 
 ## 5.2 - Whitebox Coverage
 
@@ -340,6 +342,9 @@ Team work divided evenly as follows:
 Once all work was done, the group came together once again to review eachother's work, build the report, and practice the demo.
 
 # 9 - Difficulties, Challenges, and Lessons Learned
+This lab presented few challenges since it built off of the previous lesson. 
+
+We learnt a lot while doing the manual test coverage (including the DU-pairs) and gained a better understanding.
 
 # 10 - Comments and Feedback
 
