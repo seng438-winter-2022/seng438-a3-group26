@@ -241,6 +241,18 @@ Thus, using strong ECT, all 4 cases were tested.
 - zero range
 - null range
 
+### intersects(Range)
+
+The white box testing for intersects with a range argument was using ECT with removal of any redundant test cases.
+The test cases were partitioned based on the states of the incoming range object, namely equal to original, partially overlaps,
+overlaps, no overlap; and the boundaries null and invalid. 
+- Ranges equal
+- Ranges fully overlap one another
+- Ranges partially overlap
+- Ranges do not overlap
+- One range is null
+- One range is invalid
+
 # 4 - Selected Test Cases Using Coverage Information and How They Have Increased Code Coverage
 
 ## 4.1 -
