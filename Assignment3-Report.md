@@ -260,7 +260,7 @@ base: {-inf, inf}, {null}
 delta: {negative}, {0}, {positive}
 allowZeroCrossing: {true}, {false}
 
-Thus, by Strong ECT: 2*3*2 = 12
+Thus, by Strong ECT: 2x3x2 = 12
 
 The twelve test cases were then developed using the equivalence classes and boundaries as such:
 - Base= -inf to inf, delta = negative, allowZero= true
