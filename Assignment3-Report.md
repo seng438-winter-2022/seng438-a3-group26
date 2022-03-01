@@ -232,6 +232,15 @@ and then using strong ECT to create a combination of invalid and valid upper bou
 - invalid both bounds
 - null
 
+### toString
+
+Test cases were created by partitioning the Range object that calls the toString method. The partitions were: invalid range, valid range, zero range and a null range.
+Thus, using strong ECT, all 4 cases were tested.
+- Invalid range
+- valid range
+- zero range
+- null range
+
 # 4 - Selected Test Cases Using Coverage Information and How They Have Increased Code Coverage
 
 ## 4.1 -
