@@ -342,6 +342,9 @@ Team work divided evenly as follows:
 Once all work was done, the group came together once again to review eachother's work, build the report, and practice the demo.
 
 # 9 - Difficulties, Challenges, and Lessons Learned
+This lab presented few challenges since it built off of the previous lesson. 
+
+We learnt a lot while doing the manual test coverage (including the DU-pairs) and gained a better understanding.
 
 # 10 - Comments and Feedback
 
