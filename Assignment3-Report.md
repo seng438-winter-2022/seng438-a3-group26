@@ -285,7 +285,8 @@ after adding this test case the branch coverage went up to 100% as seen below
 
 ![](media/getCumulativePercentagesUpdated.png)
 
-## 4.2 -
+## 4.2 - Range `equals` testNonEquLowerRange
+This test case looked at Range class equals method and looked to test the branch where the lower range calue is not equal. This increases the coverage by forcing a specific path and increasing the line coverage. It also hinges on a decision and overall just covers a good blackbox case. Since it covers so many different cases, it helps with everything. Figure 5 shows the branch coverage for Range and anyone with 0 coverage was ignored. Now Figure 1 shows that it the coverage has increased to 100%
 
 ## 4.3 -
 
@@ -347,6 +348,9 @@ Team work divided evenly as follows:
 Once all work was done, the group came together once again to review eachother's work, build the report, and practice the demo.
 
 # 9 - Difficulties, Challenges, and Lessons Learned
+This lab presented few challenges since it built off of the previous lesson. 
+
+We learnt a lot while doing the manual test coverage (including the DU-pairs) and gained a better understanding.
 
 # 10 - Comments and Feedback
 
