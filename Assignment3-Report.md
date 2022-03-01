@@ -276,7 +276,7 @@ NOTE: Got rid of 5 redundant base = null test cases (all throw exceptions)
 
 # 4 - Selected Test Cases Using Coverage Information and How They Have Increased Code Coverage
 
-## 4.1 - getCumulativePercentages(value) - `testNullData`
+## 4.1 - DataUtilities `getCumulativePercentages(value)` - testNullData
 This test case increased the branch coverage of `getCumulativePercentages` from the DataUtilites class. Originally the branch coverage was 75% as seen below
 
 ![](media/getCumulativePercentagesInitial.png)
@@ -285,14 +285,18 @@ after adding this test case the branch coverage went up to 100% as seen below
 
 ![](media/getCumulativePercentagesUpdated.png)
 
-## 4.2 - Range `equals` testNonEquLowerRange
+This was done by forcing a a specific branch to be taken in the test case
+
+## 4.2 - Range `equals(Range)` - testNonEquLowerRange
 This test case looked at Range class equals method and looked to test the branch where the lower range calue is not equal. This increases the coverage by forcing a specific path and increasing the line coverage. It also hinges on a decision and overall just covers a good blackbox case. Since it covers so many different cases, it helps with everything. Figure 5 shows the branch coverage for Range and anyone with 0 coverage was ignored. Now Figure 1 shows that it the coverage has increased to 100%
 
 ## 4.3 -
 
 ## 4.4 -
 
-## 4.5 -
+## 4.5 - DataUtilities `equal(double [][], double[][])` 
+This test suite was added for the equal method in the Data utilites class. This test suite increased the line, branch and method coverage of the equal method. the coverage increased from 0% to 100% of the method coverage. This was accomplished by analyzing the source code and creating coverages for the method.
+
 
 # 5 - Coverage Achieved for Each Class and Method
 
