@@ -253,6 +253,27 @@ overlaps, no overlap; and the boundaries null and invalid.
 - One range is null
 - One range is invalid
 
+### shift(Range, double, boolean)
+
+First, the 3 arguments passed to the method shift were analyzed for equivalence and boundaries. They were evaluated as:
+base: {-inf, inf}, {null}
+delta: {negative}, {0}, {positive}
+allowZeroCrossing: {true}, {false}
+
+Thus, by Strong ECT: 2*3*2 = 12
+
+The twelve test cases were then developed using the equivalence classes and boundaries as such:
+- Base= -inf to inf, delta = negative, allowZero= true
+- Base = -inf to inf, delta = 0, allowzerocrossing = true
+- Base = -inf to inf, delta = positive, allowzerocrossing = true
+- Base = -inf to inf, delta = negative, allowZero = false
+- Base = -inf to inf, delta = 0, allowzero = flase
+- Base = -inf to inf, delta = positive, allowzero = false
+- Base = null
+
+NOTE: Got rid of 5 redundant base = null test cases (all throw exceptions)
+
+
 # 4 - Selected Test Cases Using Coverage Information and How They Have Increased Code Coverage
 
 ## 4.1 -
