@@ -221,6 +221,17 @@ Test cases were created based on the documentation of `shift(Range, double)` and
 - shift by negative infinity
 - shift by positive infinity 
 
+### isNaNRange
+
+Test cases were created by partitioning the upper bound and lower bound into invalid and valid bounds, 
+and then using strong ECT to create a combination of invalid and valid upper bound test cases. 
+
+- both bounds valid
+- invalid Lower Bound
+- invalid Upper Bound
+- invalid both bounds
+- null
+
 # 4 - Selected Test Cases Using Coverage Information and How They Have Increased Code Coverage
 
 ## 4.1 -
