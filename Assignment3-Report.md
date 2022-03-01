@@ -279,7 +279,7 @@ NOTE: Got rid of 5 redundant base = null test cases (all throw exceptions)
 ## 4.1 - getCumulativePercentages(value) - `testNullData`
 This test case increased the branch coverage of `getCumulativePercentages` from the DataUtilites class. Originally the branch coverage was 75% as seen below
 
-![](media/getCumulativePercentagesInital.png)
+![](media/getCumulativePercentagesInitial.png)
 
 after adding this test case the branch coverage went up to 100% as seen below
 
