@@ -66,6 +66,25 @@ public class testColumnTotal extends DataUtilities {
 		assertEquals(calcMe,6.0,0);
 }
 
+	@Test
+	public void nullCell()
+	{
+		mocking.checking(new Expectations() {
+			{
+				one(values).getColumnCount();
+				will(returnValue(1));
+				one(values).getRowCount();
+				will(returnValue(1));
+				one(values).getValue(0, 0);
+				will(returnValue(null));
+			}
+		});
+		double calculateMe=calculateColumnTotal(values,0);
+		
+		assertEquals(0,calculateMe,0);
+	}	
+	
+	
 @Test(expected = IndexOutOfBoundsException.class)
 public void testOutsideBoundary() {
 	mocking.checking(new Expectations() {
