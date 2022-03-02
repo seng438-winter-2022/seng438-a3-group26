@@ -333,7 +333,8 @@ thus the n==null branch is never touched, causing the incomplete branching cover
 To remedy this, a testNullEntry test case was created where the mocked getValue for the row to be called for calculateRowTotal
 is to return null, and thus shall fulfill the n!=null branching.
 
-## 4.4 -
+## 4.4 - DataUtilities `calculateColumnTotal(values2D,int)` - testColumnTotal.java
+Based on the branch coverage before this test case was made, it was only at 75%. Therefore, I added this to increase that to 100%. There was a if statement in the code where only one branch was tested, and so I made asure to add a test that tested the other branch.
 
 ## 4.5 - DataUtilities `equal(double [][], double[][])` 
 This test suite was added for the equal method in the Data utilites class. This test suite increased the line, branch and method coverage of the equal method. the coverage increased from 0% to 100% of the method coverage. This was accomplished by analyzing the source code and creating coverages for the method.
