@@ -162,6 +162,20 @@ corresponding test cases were:
 - zeros
 - null
 
+### createNumberArray2D
+
+The test cases for createNumberArray2D were developed by analyzing the documentation and the code for
+the method createNumberArray2D .
+The parameter under scrutiny is the 2D array passed as an argument to createNumberArray. The test cases were developed
+to test various states of this array, and to ensure full coverage of the code.
+As such, the test cases were:
+- Valid 2D array
+- Valid 2D array with negatives
+- Zero 2D Array
+- Null 2D array
+- Empty 2D Array
+- Partial Empty 2D Array
+
 ## Range
 
 ### equals
@@ -283,7 +297,6 @@ The twelve test cases were then developed using the equivalence classes and boun
 - Base = null
 
 NOTE: Got rid of 5 redundant base = null test cases (all throw exceptions)
-
 
 # 4 - Selected Test Cases Using Coverage Information and How They Have Increased Code Coverage
 
