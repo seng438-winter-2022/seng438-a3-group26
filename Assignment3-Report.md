@@ -388,7 +388,7 @@ Poorly defined requirements can make generating these test cases difficult. Also
 
 ### Advantages and disadvantages of coverage testing
 Coverage testing ensures that a specific amount of code is covered in the testing. This also ensures that the test cases are well distributed and not centered around only a few parts of the code. This type of testing is good to use as an indication to when there is enough or not enough test cases. Many forms of testing can not do so, but coverage testing is a perfect indication os 
-fuch. However, this type of testing isn't designed to find all bugs, but rather just ensure code is covered. This means that many bugs can be missed. Also, this type of testing can't ensure the quality of the test cases, only the overall coverage. Also, logical operators aren't understood by this type of testing, and so coverage testing will not be able to deal with them properly. 
+fuch. However, this type of testing isn't designed to find all bugs, but rather just ensure code is covered. This means that many bugs can be missed. Also, this type of testing can't ensure the quality of the test cases, only the overall coverage. 
 Also, coverage testing takes a lot of time to do properly and to meet the coverage percentage. Many test cases might have to be added to ensure coverage is adequate. This would be very time consuming. Coverage testing also helps identify defficiencies in test cases.
 
 # 8 - Teamwork Allocation
@@ -404,7 +404,13 @@ Once all work was done, the group came together once again to review eachother's
 # 9 - Difficulties, Challenges, and Lessons Learned
 This lab presented few challenges since it built off of the previous lesson. 
 
-We learnt a lot while doing the manual test coverage (including the DU-pairs) and gained a better understanding.
+We learnt a lot while doing the manual test coverage (including the DU-pairs) and gained a better understanding. 
+
+Another difficulty we faced was at first getting accustomed to the coverage tool software and initially getting it running since we have never used a coverage tool in eclipse. 
+
+Another challenge was that the number of branches/lines/methods covered by the tool sometimes did not quite match
+the expefcted human coverage for the tests. This was remedied, however, by inspecting the code in more depth and 
+subsequently creating more test cases.
 
 # 10 - Comments and Feedback
 
