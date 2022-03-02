@@ -298,6 +298,18 @@ The twelve test cases were then developed using the equivalence classes and boun
 
 NOTE: Got rid of 5 redundant base = null test cases (all throw exceptions)
 
+### hashCode()
+
+The test cases for hashCode were developed by reviewing the documentation of the hashCode function, and reviewing its code to
+ensure full coverage. For this method, the equivalence classes were: {valid range}, {invalid range}, {multiple identical}, 
+{multiple unique}, and the boundaries were {0} and {null}. Thus, the test cases were developed as:
+- HashCode for valid range
+- HashCode for invalid range
+- HashCode for multiple identical ranges
+- hashcode for multiple unique ranges
+- hashcode for range==0
+- hashcode for null range
+
 # 4 - Selected Test Cases Using Coverage Information and How They Have Increased Code Coverage
 
 ## 4.1 - DataUtilities `getCumulativePercentages(value)` - testNullData
