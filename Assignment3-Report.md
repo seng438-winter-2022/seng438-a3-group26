@@ -152,6 +152,16 @@ The following test cases were developed based on the documentation of the `equal
 - both arrays are null
 - arrays are of unequal lengths
 
+###createNumberArray
+
+test cased were based on the input variables of a possible incoming data array which consists of doubles. Therefore, the 
+corresponding test cases were:
+
+- positive doubles
+- negative doubles
+- zeros
+- null
+
 ## Range
 
 ### equals
@@ -234,11 +244,12 @@ and then using strong ECT to create a combination of invalid and valid upper bou
 
 ### toString
 
-Test cases were created by partitioning the Range object that calls the toString method. The partitions were: invalid range, valid range, zero range and a null range.
+Test cases were created by partitioning the Range object that calls the toString method. The partitions were: invalid lower bound with valid upper bound, valid lower bound with invalid upper bound, invalid range and a null range.
 Thus, using strong ECT, all 4 cases were tested.
-- Invalid range
+- Invalid lower bound with valid upper bound
+- valid lower bound with invalid upper bound
 - valid range
-- zero range
+- invalid range
 - null range
 
 ### intersects(Range)
