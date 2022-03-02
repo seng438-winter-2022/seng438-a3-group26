@@ -187,7 +187,24 @@ public class DataUtilitiesCalcRowTotalTest extends DataUtilities {
 		calcResult = DataUtilities.calculateRowTotal(null, 2);
 	}
 
-
+/**
+	 * Test when null entry within the table, expecting a zero sum
+	 */
+	@Test
+	public void testNullEntry() {
+		values2DMock.checking(new Expectations() {
+			{
+				one(val).getColumnCount();
+				will(returnValue(1));
+				one(val).getRowCount();
+				will(returnValue(1));
+				one(val).getValue(0, 0);
+				will(returnValue(null));
+			}
+		});
+		calcResult = DataUtilities.calculateRowTotal(val, 0);
+		assertEquals(0.0, calcResult,DELTA);
+	}
 
 
 }
