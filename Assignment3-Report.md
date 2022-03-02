@@ -152,7 +152,7 @@ The following test cases were developed based on the documentation of the `equal
 - both arrays are null
 - arrays are of unequal lengths
 
-###createNumberArray
+### createNumberArray
 
 test cased were based on the input variables of a possible incoming data array which consists of doubles. Therefore, the 
 corresponding test cases were:
