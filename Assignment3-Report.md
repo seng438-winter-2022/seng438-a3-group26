@@ -326,7 +326,12 @@ This was done by forcing a a specific branch to be taken in the test case
 ## 4.2 - Range `equals(Range)` - testNonEquLowerRange
 This test case looked at Range class equals method and looked to test the branch where the lower range calue is not equal. This increases the coverage by forcing a specific path and increasing the line coverage. It also hinges on a decision and overall just covers a good blackbox case. Since it covers so many different cases, it helps with everything. Figure 5 shows the branch coverage for Range and anyone with 0 coverage was ignored. Now Figure 1 shows that it the coverage has increased to 100%
 
-## 4.3 -
+## 4.3 - DataUtilities `calculateRowTotal(Values2D, int)` - DataUtilitiesCalcRowTest
+Looking at the original test case coverage, the branch coverage of the test case was 75%. Looking at the code, it is obvious
+that the n!=null branch was missing 1 of 2 branches. Upon further review of the test cases, the getValue never returns null, and
+thus the n==null branch is never touched, causing the incomplete branching coverage. 
+To remedy this, a testNullEntry test case was created where the mocked getValue for the row to be called for calculateRowTotal
+is to return null, and thus shall fulfill the n!=null branching.
 
 ## 4.4 -
 
