@@ -392,11 +392,25 @@ _Figure 5.4 - Line coverage metric for all methods in Range and DataUtilites_
 
 ![](media/branchcover.PNG)
 
-_Figure 5.4 - Branch coverage metric for all methods in Range and DataUtilites_
+_Figure 5.5 - Branch coverage metric for all methods in Range and DataUtilites_
 
 ![](media/methodcover.PNG)
 
-_Figure 5.4 - Method coverage metric for all methods in Range and DataUtilites_
+_Figure 5.6 - Method coverage metric for all methods in Range and DataUtilites_
+
+### Analysis of Coverage Metrics
+
+Upon review of the coverage metrics reported from the coverage tool, it is obvious that our new test cases and the modified test 
+cases sufficiently covered the methods. In total, the branch coverage for the entire DataUtilities class was 93.8% and for Range 
+91.7%. This indicates that nearly every branch in all of the methods in these classes were covered by our test suite. 
+Next, the total line coverage for the entire DataUtilities class is 100%, and for Range 98.1%. This indicates that our test suite
+covers almost every single line of code for the contained methods in these classes, with perfect line coverage for the 
+DataUtilities class.
+Finally, since the EclEmma tool does not supprt condition coverage (as indicated earlier in this report), our group substituted
+condition coverage for method coverage that is supported by EclEmma (again, indicated earlier in this report). 
+The method coverage for both Range and DataUtilities is 100%, indicating perfect method coverage in out test suite. 
+Overall, our assignment 3 test suite achieves very good overall coverage for both the DataUtilities and the Range classes under 
+test.
 
 # 6 - Pros and Cons of Coverage Tools Used and Metrics Reported
 
