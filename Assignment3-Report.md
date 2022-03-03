@@ -374,6 +374,18 @@ _Figure 6 - Range method coverage for blackbox testing_
 
 The screenshots below show the coverage form white box testing and show the full class coverage.
 
+![](media/linecover_after.PNG)
+
+_Figure 5.1 - Total Line coverage for Range and Data Utilities classes after new and modified test cases
+
+![](media/branchcover_after.PNG)
+
+_Figure 5.2 - Total branch coverage for Range and Data Utilities classes after new and modified test cases
+
+![](media/methodcover_after.PNG)
+
+_Figure 5.3 - Total method coverage for Range and Data Utilities classes after new and modified test cases
+
 # 6 - Pros and Cons of Coverage Tools Used and Metrics Reported
 
 The coverage tool ultimately chosen by our team was EclEmma. Due to its ease of access within the eclipse environment and the 
