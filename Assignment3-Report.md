@@ -386,6 +386,18 @@ _Figure 5.2 - Total branch coverage for Range and Data Utilities classes after n
 
 _Figure 5.3 - Total method coverage for Range and Data Utilities classes after new and modified test cases_
 
+![](media/linecover.PNG)
+
+_Figure 5.4 - Line coverage metric for all methods in Range and DataUtilites_
+
+![](media/branchcover.PNG)
+
+_Figure 5.4 - Branch coverage metric for all methods in Range and DataUtilites_
+
+![](media/methodcover.PNG)
+
+_Figure 5.4 - Method coverage metric for all methods in Range and DataUtilites_
+
 # 6 - Pros and Cons of Coverage Tools Used and Metrics Reported
 
 The coverage tool ultimately chosen by our team was EclEmma. Due to its ease of access within the eclipse environment and the 
